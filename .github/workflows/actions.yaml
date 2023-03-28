@@ -1,5 +1,14 @@
 name: Actions Workflow
-on: [push]
+
+on: 
+  push: 
+  # pull_request:
+    # branches-ignore: ignores some branches
+    branches:
+      - master
+      # - "features/*" 
+    tags:
+      - v1
 
 jobs:
   run-github-actions:
